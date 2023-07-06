@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Threat Modelling</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"> -->
+<head> 
+<script src="https://unpkg.com/htmlincludejs"></script>
+       <script>
+      let includes = document.getElementsByTagName('include');
+      for (var i = 0; i < includes.length; i++) {
+         let include = includes[i];
+         load_file(includes[i].attributes.src.value, function(text) {
+            include.insertAdjacentHTML('afterend', text);
+            include.remove();
+         });
+      }
+      function load_file(filename, callback) {
+         fetch(filename).then(response => response.text()).then(text => callback(text));
+      }
+   </script>
+  </head> 
+
+  <body> 
+     <include src="nav.html"></include>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px;opacity: 0.9">
+  <a href="#team" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Team</a>
+  <a href="#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Services</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:11050px;margin-top:70px">
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:11150px" id="services">
+  <div class="w3-container w3-content w3-center" style="max-width:800px">
+    <h2 class="w3-wide">Threat Modelling</h2>
+	<h2 class="w3-wide">Definition</h2>
+    <p class="w3-opacity"><i>Penetration testing is essential for your security, mate</i></p>
+    <p class="w3-justify">Threat modeling is a structured process with these objectives: identify security requirements, pinpoint security threats and potential vulnerabilities, quantify threat and vulnerability criticality, and prioritize remediation methods.</p>
+
+<p class="w3-justify">Threat modeling works to identify, communicate, and understand threats and mitigations within the context of protecting something of value.</p>
+
+<p class="w3-justify">In essence, it is a view of the application and its environment through the lens of security.</p>
+
+<p class="w3-justify">Threat modeling can be applied to a wide range of things, including software, applications, systems, networks, distributed systems, Internet of Things (IoT) devices, and business processes.</p>
+
+<p class="w3-justify">Threat modeling is the process of identifying potential security threats or vulnerabilities in an application, system, or organization and determining the potential impact of those threats. This process involves identifying potential attackers, their objectives, and their methods of attack, as well as assessing the likelihood of those attacks and the potential consequences. The goal of threat modeling is to proactively identify and address potential security risks before they can be exploited by attackers. By using threat modeling, organizations can improve their overall security posture and reduce the likelihood of successful attacks.</p>
+
+<p class="w3-justify">Threat modeling is typically done as part of the software development lifecycle (SDLC), although it can also be applied to existing systems or organizations. The process involves identifying potential threats to the system or application, assessing their likelihood and impact, and then implementing controls or countermeasures to mitigate those risks.</p>
+
+<p class="w3-justify">There are various approaches to threat modeling, but most follow a similar set of steps. These steps typically include:</p>
+
+<p class="w3-justify">1. Define the system: Identify the scope of the system, including its boundaries and interfaces with other systems.</p>
+
+<p class="w3-justify">2. Create a data flow diagram: Map out the flow of data through the system, including inputs, outputs, and processing steps.</p>
+
+<p class="w3-justify">3. Identify threats: Brainstorm potential threats that could exploit vulnerabilities in the system, such as data breaches, denial of service attacks, or unauthorized access.</p>
+
+<p class="w3-justify">4. Analyze threats: Assess the likelihood and impact of each identified threat, taking into account factors such as the system's architecture, technology, and environment.</p>
+
+<p class="w3-justify">5. Prioritize threats: Prioritize the most significant threats based on their potential impact and likelihood, and develop a plan to address them.</p>
+
+<p class="w3-justify">6. Implement controls: Develop and implement controls or countermeasures to mitigate the identified risks, such as firewalls, access controls, or encryption.</p>
+
+<p class="w3-justify">7. Test and verify: Test the system to verify that the implemented controls are effective in mitigating the identified risks.</p>
+
+<p class="w3-justify">Threat modeling is an important component of any comprehensive security program, as it enables organizations to identify and address potential security risks before they can be exploited by attackers. By taking a proactive approach to security, organizations can reduce the likelihood of successful attacks and improve their overall security posture.</p>
+	</div>
+<div class="w3-container w3-content w3-center w3-padding-64 w3-black" style="max-width:11150px" id="services">
+<div class="w3-container w3-content w3-center" style="max-width:800px">
+	<h2 class="w3-wide">Benefits of Threat Modelling</h2>
+	<p class="w3-justify">Done right, threat modeling provides a clear “line of sight” across a project that justifies security efforts. The threat model allows security decisions to be made rationally, with all the information on the table.</p>
+
+<p class="w3-justify">The threat modeling process naturally produces an assurance argument that can be used to explain and defend the security of an application. An assurance argument starts with a few high level claims, and justifies them with either subclaims or evidence.</p>
+<p class="w3-justify">When the development organization is serious about security, threat modeling is the most effective way to do the following:</p>
+ <p class="w3-justify"> 1. Detect problems early in the software development life cycle, even before coding begins.</p>
+ <p class="w3-justify"> 2. Spot design flaws that traditional testing methods and code reviews may overlook.</p>
+ <p class="w3-justify"> 3. Evaluate new forms of attack that you might not otherwise consider.</p>
+ <p class="w3-justify"> 4. Maximize testing budgets by helping target testing and code review.</p>
+<p class="w3-justify">  5. Identify security requirements.</p>
+<p class="w3-justify">  6. Remediate problems before software release and prevent costly recoding post-deployment.</p>
+<p class="w3-justify">  7. Think about threats beyond standard attacks to the security issues unique to your application.</p>
+ <p class="w3-justify"> 8. Keep frameworks ahead of the internal and external attackers relevant to your applications.</p>
+ <p class="w3-justify"> 9. Highlight assets, threat agents, and controls to deduce components that attackers will target.</p>
+ <p class="w3-justify"> 10. Model the location of threat agents, motivations, skills, and capabilities to locate potential attackers in relation to the system architecture.</p>
+
+ <p class="w3-justify"> The benefits of threat modeling:</p>
+
+<p class="w3-justify">1. Improved security: By identifying potential threats and vulnerabilities early in the development process, organizations can implement controls and countermeasures to mitigate those risks, resulting in a more secure application or system.</p>
+
+<p class="w3-justify">2. Reduced costs: Addressing security issues early in the development process can help organizations avoid the high costs associated with fixing security flaws in production systems.</p>
+
+<p class="w3-justify">3. Increased efficiency: By identifying and addressing potential security risks early, organizations can avoid the need for time-consuming and costly remediation efforts later on.</p>
+
+<p class="w3-justify">4. Compliance: Many regulatory standards, such as PCI-DSS and HIPAA, require threat modeling as part of their compliance requirements, so performing threat modeling can help organizations meet these requirements.</p>
+
+<p class="w3-justify">5. Better communication: Threat modeling facilitates communication between developers, security professionals, and business stakeholders, ensuring that everyone is on the same page regarding potential security risks and their potential impact.</p>
+
+<p class="w3-justify">6. More robust testing: By identifying potential security risks early, organizations can develop more effective testing scenarios to ensure that their systems are resilient against attacks.</p>
+
+<p class="w3-justify">Overall, threat modeling is a crucial component of any comprehensive security program, as it helps organizations identify and address potential security risks before they can be exploited by attackers. By taking a proactive approach to security, organizations can reduce the likelihood of successful attacks and improve their overall security posture.</p>
+
+<p class="w3-justify">The first step in the threat modeling process is concerned with gaining an understanding of the application and how it interacts with external entities. </p>
+<p class="w3-justify">This involves:</p>
+<p class="w3-justify">- Creating use cases to understand how the application is used.</p>
+<p class="w3-justify">- Identifying entry points to see where a potential attacker could interact with the application.</p>
+<p class="w3-justify">- Identifying assets, i.e. items or areas that the attacker would be interested in.</p>
+<p class="w3-justify">- Identifying trust levels that represent the access rights that the application will grant to external entities.</p>
+
+<p class="w3-justify">This information is documented in a resulting Threat Model document. It is also used to produce data flow diagrams (DFDs) for the application. The DFDs show the different paths through the system, highlighting the privilege boundaries.</p>
+</p>
+ </div>
+ </div>
+ 
+ <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:11150px" id="services">
+<div class="w3-container w3-content w3-center" style="max-width:800px">
+	<h2 class="w3-wide">THIS NEEDS TO BE FILLED, GODJI BERI!</h2>
+	<p class="w3-justify">SOME TEXT MATE</p>
+</div>
+</div>
+
+<include src="footer.html"></include>
+
+</body>
+</html>

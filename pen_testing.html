@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Penetration Testing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"> -->
+<head> 
+<script src="https://unpkg.com/htmlincludejs"></script>
+       <script>
+      let includes = document.getElementsByTagName('include');
+      for (var i = 0; i < includes.length; i++) {
+         let include = includes[i];
+         load_file(includes[i].attributes.src.value, function(text) {
+            include.insertAdjacentHTML('afterend', text);
+            include.remove();
+         });
+      }
+      function load_file(filename, callback) {
+         fetch(filename).then(response => response.text()).then(text => callback(text));
+      }
+   </script>
+  </head> 
+
+  <body> 
+     <include src="nav.html"></include>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px;opacity: 0.9">
+  <a href="#team" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Team</a>
+  <a href="#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Services</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:11050px;margin-top:70px">
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:11150px" id="services">
+  <div class="w3-container w3-content w3-center" style="max-width:800px">
+    <h2 class="w3-wide">Penetration Testing</h2>
+	<h2 class="w3-wide">Definition</h2>
+    <p class="w3-opacity"><i>Penetration testing is essential for your security, mate</i></p>
+    <p class="w3-justify">Comprehensive application and network vulnerability penetration assessments are essential to securing your organization. Our multidisciplinary approach looks at security from every angle to mitigate risks — from the physical environment to the human element to the role of technology.</p>
+
+<p class="w3-justify">Our application and network security testing services are designed to ensure that network and applications have been installed and configured with appropriate port security is in place. The service is also designed to minimize the risk of intrusion attempts or unauthorized access to internal IT systems.</p>
+
+<p class="w3-justify">Constant application updates and changes to application and system configurations can introduce vulnerabilities and leave you susceptible to an attack, even if you are keeping your security controls up to date. To keep your data secure, you must continuously scan your systems and devices to detect vulnerabilities as they arise.</p>
+
+<p class="w3-justify">Network penetration testing is a type of security testing that involves simulating an attack on a computer network to identify vulnerabilities and weaknesses that attackers could exploit. This testing is usually carried out by professional cybersecurity experts or ethical hackers, who attempt to penetrate the network by exploiting known vulnerabilities or using various attack methods.</p>
+
+<p class="w3-justify">Network penetration testing can involve different levels of complexity, from simple vulnerability scans to more sophisticated attacks. The ultimate goal is to identify and exploit weaknesses in the network security controls, such as firewalls, routers, and intrusion detection systems.</p>
+
+<p class="w3-justify">The results of the network penetration testing can help organizations identify vulnerabilities that need to be addressed to improve their network security posture. This can include implementing new security controls, improving network segmentation, patching vulnerabilities, or providing training to staff to raise awareness about security best practices.</p>
+
+<p class="w3-justify">Overall, network penetration testing is a valuable tool for identifying potential security risks and weaknesses in a network. By simulating real-world attacks, organizations can better understand their security posture and develop more effective strategies for protecting their sensitive data and systems from cyber threats.</p>
+	</div>
+<div class="w3-container w3-content w3-center w3-padding-64 w3-black" style="max-width:11150px" id="services">
+<div class="w3-container w3-content w3-center" style="max-width:800px">
+	<h2 class="w3-wide">Methodology</h2>
+	<p class="w3-justify">Common methodologies for conducting network penetration testing:</p>
+<p class="w3-justify">1. Reconnaissance: This phase involves gathering information about the target network, such as its IP addresses, open ports, and services running on those ports. This information can be obtained through various techniques, including scanning, network mapping, and social engineering.</p>
+<p class="w3-justify">2. Scanning: In this phase, the penetration tester uses specialized tools to scan the network for vulnerabilities, such as open ports, misconfigured services, and known vulnerabilities in the software running on the network devices.</p>
+<p class="w3-justify">3. Enumeration: This phase involves identifying the users and resources available on the network, such as servers, databases, and applications. The penetration tester may use techniques such as brute-force attacks, password cracking, or exploiting weak user credentials to gain access to these resources.</p>
+<p class="w3-justify">4. Exploitation: In this phase, the penetration tester attempts to exploit the vulnerabilities identified in the previous phases to gain unauthorized access to the network devices or resources. This may involve using tools such as Metasploit to launch attacks against the network.</p>
+<p class="w3-justify">5. Post-exploitation: Once the penetration tester has gained access to the network, they may attempt to escalate their privileges or move laterally within the network to access additional resources. This phase may also involve installing backdoors or other malware to maintain persistent access to the network.</p>
+<p class="w3-justify">6. Reporting: Finally, the penetration tester provides a report detailing the vulnerabilities and weaknesses identified during the testing, along with recommendations for remediation. This report may also include a risk assessment and recommendations for improving the overall security posture of the network.</p>
+<p class="w3-justify">These methodologies provide a structured approach to network penetration testing, helping penetration testers to systematically identify and exploit vulnerabilities in the target network. Our team uses more methodologies such as:</p>
+<p class="w3-justify">1. The Open Source Security Testing Methodology Manual (OSSTMM): This methodology was developed by the Institute for Security and Open Methodologies (ISECOM) and provides a comprehensive framework for security testing, including network penetration testing. The OSSTMM covers all aspects of security testing, from planning and preparation to reporting and follow-up.</p>
+<p class="w3-justify">2. Penetration Testing Execution Standard (PTES): This is a standard that provides a framework for planning, conducting, and reporting on penetration testing activities. The PTES covers all aspects of penetration testing, including network, web application, and wireless testing.</p>
+<p class="w3-justify">3. Information Technology Infrastructure Library (ITIL): While not specifically focused on penetration testing, ITIL provides a framework for IT service management that includes security management. The security management framework includes processes for identifying, assessing, and mitigating security risks, which can be applied to network penetration testing.</p>
+<p class="w3-justify">4. The National Institute of Standards and Technology (NIST) Cybersecurity Framework: This framework provides guidance on how organizations can manage and reduce cybersecurity risks. It includes a set of standards, guidelines, and best practices that can be used to identify, assess, and manage cybersecurity risks in network environments.</p>
+<p class="w3-justify">Each of these methodologies has its own strengths and weaknesses, and the choice of methodology will depend on the specific needs of the organization and the goals of the penetration testing engagement. Regardless of the methodology used, the goal of network penetration testing is to identify vulnerabilities and weaknesses in the network, so that they can be remediated before they can be exploited by attackers.</p>
+ </div>
+ </div>
+ 
+ <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:11150px" id="services">
+<div class="w3-container w3-content w3-center" style="max-width:800px">
+	<h2 class="w3-wide">Result</h2>
+	<p class="w3-justify">After an external network penetration testing engagement, we will provide a comprehensive report that outlines the vulnerabilities and weaknesses discovered during the engagement, along with recommendations for remediation. The report should be tailored to the needs of the organization and should provide clear and actionable information that can be used to improve the security of the network.</p>
+
+<p class="w3-justify">Some of the typical deliverables that may be included in the report are:</p>
+
+<p class="w3-justify">1. Executive summary: A high-level overview of the findings, including an assessment of the overall security posture of the network and a summary of the most critical vulnerabilities discovered.</p>
+
+<p class="w3-justify">2. Technical findings: A detailed description of each vulnerability discovered, including the nature of the vulnerability, the severity of the risk it poses, and the steps required to exploit it. This section may include screenshots or other evidence to support the findings.</p>
+
+<p class="w3-justify">3. Risk assessment: An analysis of the potential impact of each vulnerability, including an assessment of the likelihood of an attacker exploiting it and the potential consequences of a successful attack. This analysis can help the organization prioritize the vulnerabilities and determine which ones need to be addressed first.</p>
+
+<p class="w3-justify">4. Recommendations: A list of specific steps that the organization can take to remediate the vulnerabilities discovered during the engagement. This may include software patches, configuration changes, or other security controls that can be implemented to reduce the risk of a successful attack.</p>
+
+<p class="w3-justify">5. Appendices: Any additional information that may be relevant to the engagement, such as a methodology used by the penetration testing company, a list of tools used, or detailed technical information about the vulnerabilities discovered.</p>
+
+<p class="w3-justify">The report should be well-organized, easy to understand, and actionable, with clear recommendations that the organization can use to improve its security posture.</p>
+	
+	</div>
+	</div>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <h4>Network Penetration Testing</h4>
+        <img src="network2.jpg" class="w3-round w3-margin-bottom w3-card" alt="Random Name">
+      </div>
+      <div class="w3-third">
+        <h4>Thread Modelling</h4>
+        <img src="tm.jpg" class="w3-round w3-margin-bottom w3-card" alt="Random Name">
+      </div>
+      <div class="w3-third">
+        <h4>Consulting</h4>
+        <img src="consulting.jpg" class="w3-round w3-card" alt="Random Name">
+      </div>
+    </div>
+    <div class="w3-row">
+      <div class="w3-third">
+        <h4>Automated Penetration Testing</h4>
+        <img src="monitor.jpg" class="w3-round w3-margin-bottom w3-card" alt="Random Name">
+      </div>
+      <div class="w3-third">
+        <h4>Web Application Penetration Testing</h4>
+        <img src="web.jpg" class="w3-round w3-margin-bottom w3-card" alt="Random Name">
+      </div>
+      <div class="w3-third">
+        <h4>Training</h4>
+        <img src="training.jpg" class="w3-round w3-margin-bottom w3-card" alt="Random Name w3-card">
+      </div>
+    </div>
+  </div>
+
+
+
+<include src="footer.html"></include>
+
+</body>
+</html>

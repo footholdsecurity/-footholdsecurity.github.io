@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Foothold Security</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"> -->
+
+<head> 
+<script src="https://unpkg.com/htmlincludejs"></script>
+       <script>
+      let includes = document.getElementsByTagName('include');
+      for (var i = 0; i < includes.length; i++) {
+         let include = includes[i];
+         load_file(includes[i].attributes.src.value, function(text) {
+            include.insertAdjacentHTML('afterend', text);
+            include.remove();
+         });
+      }
+      function load_file(filename, callback) {
+         fetch(filename).then(response => response.text()).then(text => callback(text));
+      }
+   </script>
+  </head> 
+
+  <body> 
+     <include src="./nav.html"></include>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:11050px;margin-top:70px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="planet.jpg" style="width:100%; max-height:700px">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Foothold Security</h3>
+      <p><b>We belive in free and secure internet.</b></p>   
+    </div>
+  </div>
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:11150px" id="services">
+  <div class="w3-container w3-content w3-center" style="max-width:800px">
+    <h2 class="w3-wide">Services</h2>
+    <p class="w3-opacity"><i>We love improving your security</i></p>
+    <p class="w3-justify">FHS provides variety of security services. The hands-on approach with web application and network penetration testing are the most effective for our customers. Testing new features or whole infrastructure the hardening benefits are amazing. When your team needs to evaluate new functionality or existing one we can join in for thread modelling sessions, where we can provide the point of view of a hacker.</p>
+	</div>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <a href="web_pen_testing.html" h4>Network Penetration Testing</h4>
+        <img src="network2.jpg" class="w3-round w3-margin-bottom w3-card" alt="Random Name" ></a>
+      </div>
+      <div class="w3-third">
+        <a href="threat_modelling.html" h4>Threat Modelling</h4>
+        <img src="tm.jpg" class="w3-round w3-margin-bottom w3-card" alt="Random Name"></a>
+      </div>
+      <div class="w3-third">
+        <a href="consulting.html" h4>Consulting</h4>
+        <img src="consulting.jpg" class="w3-round w3-card" alt="Random Name"></a>
+      </div>
+    </div>
+    <div class="w3-row">
+      <div class="w3-third">
+        <a href="automated_pen_testing.html" h4>Automated Penetration Testing</h4>
+        <img src="monitor.jpg" class="w3-round w3-margin-bottom w3-card" alt="Random Name"></a>
+      </div>
+      <div class="w3-third">
+        <a href="web_application_pen_testing.html" h4>Web Application Penetration Testing</h4>
+        <img src="web.jpg" class="w3-round w3-margin-bottom w3-card" alt="Random Name"></a>
+      </div>
+      <div class="w3-third">
+        <a href="training.html" h4>Training</h4>
+        <img src="training.jpg" class="w3-round w3-margin-bottom w3-card" alt="Random Name w3-card"></a>
+      </div>
+    </div>
+  </div>
+
+<!-- The Team -->
+  <div class="w3-black" id="team">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="team">
+      <h2 class="w3-wide">The Team</h2>
+      <p class="w3-opacity"><i>We love to break stuff</i></p>
+      <p class="w3-justify">We are a small team of three individuals, each profficient in penetration testing and a specific domain like networking, web applications, services, operating systems etc. We work with one customer at a time providing our full attention. This approach gives most effective results. We are graded with several certifications like CEH, OSCP, OSWE etc.</p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-third">
+          <p>Lyubo</p>
+          <img src="lubo.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:95%">
+        </div>
+        <div class="w3-third">
+          <p>Milcho</p>
+          <img src="milcho2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:95%">
+        </div>
+        <div class="w3-third">
+          <p>Gordon</p>
+          <img src="gord.jpg" class="w3-round" alt="Random Name" style="width:95%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<include src="footer.html"></include>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

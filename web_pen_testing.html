@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Foothold Security</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"> -->
+<head> 
+<script src="https://unpkg.com/htmlincludejs"></script>
+       <script>
+      let includes = document.getElementsByTagName('include');
+      for (var i = 0; i < includes.length; i++) {
+         let include = includes[i];
+         load_file(includes[i].attributes.src.value, function(text) {
+            include.insertAdjacentHTML('afterend', text);
+            include.remove();
+         });
+      }
+      function load_file(filename, callback) {
+         fetch(filename).then(response => response.text()).then(text => callback(text));
+      }
+   </script>
+  </head> 
+
+  <body> 
+     <include src="nav.html"></include>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px;opacity: 0.9">
+  <a href="#team" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Team</a>
+  <a href="#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Services</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:11050px;margin-top:70px">
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:11150px" id="services">
+  <div class="w3-container w3-content w3-center" style="max-width:800px">
+    <h2 class="w3-wide">Web Penetration Testing</h2>
+	<h2 class="w3-wide">Definition</h2>
+    <p class="w3-opacity"><i>Penetration testing is essential for your security, mate</i></p>
+    <p class="w3-justify">Web application penetration testing is a security assessment methodology that involves evaluating the security of a web application by simulating an attack from an external or internal threat actor. The goal of this testing is to identify vulnerabilities in the application that could be exploited by attackers to gain unauthorized access to sensitive data or to take control of the application.</p>
+
+	<p class="w3-justify">Web application penetration testing typically involves a series of tests that assess the application's security posture, including testing for vulnerabilities in authentication and authorization, input validation, session management, and business logic. The tests are typically performed by experienced security professionals who use a variety of tools and techniques to identify potential vulnerabilities and determine the effectiveness of the application's security controls.</p>
+
+	<p class="w3-justify">The results of web application penetration testing can be used to help organizations improve the security of their applications, protect sensitive data, and comply with industry regulations and standards. By identifying and remediating vulnerabilities, organizations can reduce the risk of data breaches and other security incidents, while also improving their overall security posture.</p>
+
+	<p class="w3-justify">Web application penetration testing is a critical component of a comprehensive security program for any organization that develops or uses web applications. It is essential to perform regular web application penetration testing to ensure that applications are secure and to identify vulnerabilities that could be exploited by attackers.</p>
+
+	<p class="w3-justify">The testing process typically involves several phases, including reconnaissance, vulnerability scanning, vulnerability analysis, exploitation, and post-exploitation. During the reconnaissance phase, the tester gathers information about the application, including its functionality, technologies used, and attack surface. Vulnerability scanning involves using automated tools to scan the application for known vulnerabilities. Vulnerability analysis involves manual testing to verify and validate the results of the vulnerability scanning phase.</p>
+
+<p class="w3-justify">The exploitation phase involves attempting to exploit vulnerabilities to gain access to sensitive data or to take control of the application. Finally, the post-exploitation phase involves testing to determine the extent of the compromise, what data was accessed, and what actions the attacker could take.</p>
+
+<p class="w3-justify">Web application penetration testing can help organizations identify vulnerabilities such as SQL injection, cross-site scripting, insecure direct object references, and others. It can also help to identify vulnerabilities in authentication and authorization mechanisms, business logic flaws, and session management issues.</p>
+
+<p class="w3-justify">The benefits of web application penetration testing include:</p>
+
+<p class="w3-justify">1. Improved security: By identifying vulnerabilities and remediating them, organizations can improve the security of their web applications, reducing the risk of data breaches and other security incidents.</p>
+
+<p class="w3-justify">2. Compliance: Web application penetration testing can help organizations comply with industry regulations and standards, such as the Payment Card Industry Data Security Standard (PCI DSS).</p>
+
+<p class="w3-justify">3. Cost savings: By identifying and remediating vulnerabilities, organizations can save the costs associated with data breaches, which can include fines, legal fees, and lost revenue.</p>
+
+<p class="w3-justify">4. Improved reputation: By demonstrating a commitment to security and protecting customer data, organizations can improve their reputation and build trust with their customers.</p>
+
+<p class="w3-justify">Web application penetration testing is a crucial component of a comprehensive security program, helping organizations to identify vulnerabilities in their web applications and take steps to improve their security posture.</p>
+	</div>
+<div class="w3-container w3-content w3-center w3-padding-64 w3-black" style="max-width:11150px" id="services">
+<div class="w3-container w3-content w3-center" style="max-width:800px">
+	<h2 class="w3-wide">Methodology</h2>
+	<p class="w3-justify">1. Define scope</p>
+<p class="w3-justify">Before a web application assessment can take place, Foothold Security defines a clear scope of the client. Open communication between Foothold Security and the client organization is encouraged at this stage to establish a comfortable foundation from which to assess.</p>
+
+<p class="w3-justify">2. Information Gathering
+We collect as much information as possible on the target, employing a myriad of OSINT (Open Source Intelligence) tools and techniques. The gathered data will help us to understand the operating conditions of the organization, which allows us to assess risk accurately as the engagement progresses.</p>
+
+<p class="w3-justify">3. Enumeration
+At this stage, we incorporate automated scripts and tools, among other tactics in more advanced information gathering. Interacting with the API clients (web application, mobile application…) to intercept the request and responses.</p>
+
+<p class="w3-justify">4. Threat Modelling
+Threat modeling is a structured process with these objectives: identify security requirements, pinpoint security threats and potential vulnerabilities, quantify threat and vulnerability criticality, and prioritize attack vectors.</p>
+
+<p class="w3-justify">5. Exploitation
+With careful consideration, we begin to attack vulnerabilities found within the web application. This is done cautiously to protect the application and its data, while still verifying the existence of discovered attack vectors.</p>
+
+<p class="w3-justify">Some common methodologies used when conducting web application penetration testing:</p>
+
+<p class="w3-justify">1. Reconnaissance: This phase involves gathering information about the application, including its functionality, technologies used, and attack surface. This can include reviewing documentation, analyzing network traffic, and performing OSINT (Open-Source Intelligence) gathering to collect information about the application and its associated infrastructure.</p>
+
+<p class="w3-justify">2. Mapping: This phase involves mapping the application's attack surface, which includes identifying all the endpoints, entry points, and user input fields. This is typically done using automated tools like web application scanners, which crawl the application and create a map of its structure.</p>
+
+<p class="w3-justify">3. Vulnerability scanning: This phase involves using automated tools to scan the application for known vulnerabilities. This includes scanning for common vulnerabilities like SQL injection, cross-site scripting (XSS), and command injection.</p>
+
+<p class="w3-justify">4. Vulnerability analysis: This phase involves manually verifying and validating the results of the vulnerability scanning phase. This includes verifying the existence and severity of vulnerabilities, determining the potential impact of each vulnerability, and identifying any false positives.</p>
+
+<p class="w3-justify">5. Exploitation: This phase involves attempting to exploit vulnerabilities to gain access to sensitive data or take control of the application. This can include techniques like SQL injection, cross-site scripting, and file inclusion attacks.</p>
+
+<p class="w3-justify">6. Post-exploitation: This phase involves testing to determine the extent of the compromise, what data was accessed, and what actions the attacker could take. This includes testing for data exfiltration, privilege escalation, and other attack scenarios.</p>
+
+<p class="w3-justify">7. Reporting: This phase involves documenting the findings of the penetration testing and presenting them in a clear and concise report. This report should include detailed descriptions of vulnerabilities, the impact of each vulnerability, and recommendations for remediation.</p>
+
+<p class="w3-justify">These methodologies are often combined with other techniques and tools, such as manual testing, source code analysis, and social engineering, to provide a comprehensive assessment of the web application's security posture. The goal is to identify as many vulnerabilities as possible and provide recommendations to remediate them.</p>
+ </div>
+ </div>	
+
+<include src="footer.html"></include>
+
+</body>
+</html>
